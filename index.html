@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEYAH | Accueil</title>
+    <title>YEYAH | Accueil - Boutique Premium</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- ==========================================================================
+       EN-TÊTE ET NAVIGATION
+       ========================================================================== -->
     <header>
         <div class="nav-container">
             <div class="logo"><a href="index.html">YEYAH<span>.</span></a></div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="habit.html">Boutique</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- SECTION DESIGN D'ACCUEIL (HERO) -->
-    <section class="hero-section" style="padding-top: 120px; padding-bottom: 60px; text-align: center; background: #fff;">
-        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">YEYAH Lumino Concept</h1>
-        <p style="color: #666; max-width: 600px; margin: 0 auto 30px auto;">Votre adresse de référence pour les maillots officiels et les vêtements haut de gamme au Sénégal.</p>
+    <!-- ==========================================================================
+       SECTION DESIGN D'ACCUEIL (HERO)
+       ========================================================================== -->
+    <section class="hero-section" style="padding-top: 140px; padding-bottom: 80px; text-align: center; background: #fff;">
+        <h1 style="font-size: 3rem; margin-bottom: 15px; font-weight: 800; letter-spacing: -1px;">YEYAH Lumino Concept</h1>
+        <p style="color: #555; max-width: 650px; margin: 0 auto 35px auto; font-size: 1.1rem; line-height: 1.6;">
+            Votre adresse de référence pour les maillots officiels et les vêtements haut de gamme au Sénégal. 
+            Découvrez le meilleur du vêtement sportif avec un confort et un style d'exception.
+        </p>
     </section>
 
-    <!-- SECTION DES MAILLOTS VEDETTES -->
-    <section id="vedettes">
-        <div class="section-title">
+    <!-- ==========================================================================
+       SECTION DES MAILLOTS VEDETTES
+       ========================================================================== -->
+    <section id="vedettes" style="padding-bottom: 60px;">
+        <div class="section-title" style="text-align: center; margin-bottom: 50px;">
             <h2>Nos Maillots Vedettes</h2>
             <p>Découvrez notre sélection exclusive au prix unique de 15 000 FCFA.</p>
         </div>
@@ -36,7 +46,7 @@
         <div class="grille-maillots">
             <!-- Maillot 1 : Sénégal Blanc -->
             <div class="maillot-card">
-                <div class="maillot-img-wrapper"><img src="senegalblanc.jpg" alt="Sénégal Blanc"></div>
+                <div class="maillot-img-wrapper"><img src="senegalblanc.jpg" alt="Sénégal Domicile"></div>
                 <div class="maillot-info">
                     <h3 class="maillot-titre">Sénégal — Domicile</h3>
                     <span class="prix-actuel">15 000 FCFA</span>
@@ -46,7 +56,7 @@
 
             <!-- Maillot 2 : Sénégal Vert -->
             <div class="maillot-card">
-                <div class="maillot-img-wrapper"><img src="Sénégal .jpg" alt="Sénégal Vert"></div>
+                <div class="maillot-img-wrapper"><img src="Sénégal .jpg" alt="Sénégal Extérieur"></div>
                 <div class="maillot-info">
                     <h3 class="maillot-titre">Sénégal — Extérieur</h3>
                     <span class="prix-actuel">15 000 FCFA</span>
@@ -143,32 +153,74 @@
                     <button class="btn-commander" data-nom="Maillot USA" data-prix="15 000 FCFA">💬 Commander</button>
                 </div>
             </div>
-        </div> <!-- Fin de la grille des maillots -->
+        </div> <!-- Fin de la grille -->
 
-        <!-- BOUTON SÉCURISÉ AVEC LE STYLE DIRECT POUR APPARAÎTRE SÛREMENT -->
-        <div style="text-align: center; width: 100%; margin: 50px auto 30px auto; clear: both; display: block;">
-            <a href="habit.html" style="background: #111; color: #fff; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1rem; display: inline-block; border: 2px solid #111; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-                Voir tout le catalogue
+        <!-- BOUTON RICHE ET PREMIUM POUR ALLER SÛREMENT SUR LE CATALOGUE -->
+        <div style="text-align: center; width: 100%; margin: 60px auto 20px auto; clear: both; display: block;">
+            <a href="habit.html" style="background: #111; color: #fff; padding: 18px 40px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2rem; display: inline-block; border: 2px solid #111; box-shadow: 0 5px 15px rgba(0,0,0,0.3); transition: all 0.3s ease;">
+                Voir tout le catalogue <span style="margin-left: 8px;">➔</span>
             </a>
         </div>
-
     </section>
 
-    <!-- SECTION AVANTAGES -->
-    <section id="avantages" class="avantages-bg">
-        <div class="section-title">
+    <!-- ==========================================================================
+       SECTION NOS AVANTAGES
+       ========================================================================== -->
+    <section id="avantages" class="avantages-bg" style="padding: 60px 0; background: #f9f9f9; clear: both;">
+        <div class="section-title" style="text-align: center; margin-bottom: 40px;">
             <h2>L'Expérience YEYAH</h2>
+            <p>Pourquoi faire confiance à notre boutique pour vos achats sportifs.</p>
         </div>
-        <div class="grille-avantages">
-            <div class="avantage-box"><h3>⭐ Qualité</h3></div>
-            <div class="avantage-box"><h3>🚀 Livraison</h3></div>
-            <div class="avantage-box"><h3>🔒 Sécurité</h3></div>
+
+        <div class="grille-avantages" style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="avantage-box" style="text-align: center; flex: 1; min-width: 250px; margin: 15px; padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">⭐</span>
+                <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Qualité Certifiée</h3>
+                <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">Tissus respirants de qualité supérieure, logos brodés avec soin pour une durabilité maximale.</p>
+            </div>
+            <div class="avantage-box" style="text-align: center; flex: 1; min-width: 250px; margin: 15px; padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">🚀</span>
+                <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Livraison Express</h3>
+                <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">Expédition ultra-rapide à Thiès, Dakar et partout au Sénégal dans les meilleurs délais.</p>
+            </div>
+            <div class="avantage-box" style="text-align: center; flex: 1; min-width: 250px; margin: 15px; padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">🔒</span>
+                <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Paiement Sécurisé</h3>
+                <p style="color: #666; font-size: 0.95rem; line-height: 1.5;">Pas de stress : vous passez votre commande en ligne et vous gérez le paiement de manière transparente.</p>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="copyright">&copy; 2026 YEYAH Lumino Concept. All rights reserved.</div>
+    <!-- ==========================================================================
+       PIED DE PAGE COMPLET ET RICHE (FOOTER)
+       ========================================================================== -->
+    <footer style="background: #1a1a1a; color: #fff; padding: 50px 0 0 0; font-family: sans-serif; margin-top: 40px;">
+        <div class="footer-container" style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 0 20px 40px 20px;">
+            <div class="footer-box" style="flex: 1; min-width: 250px; margin: 15px;">
+                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px;">YEYAH<span>.</span></h3>
+                <p style="color: #bbb; font-size: 0.95rem; line-height: 1.6;">Votre adresse de référence pour les maillots et les vêtements haut de gamme. Suivez l'évolution de notre collection.</p>
+            </div>
+            <div class="footer-box" style="flex: 1; min-width: 200px; margin: 15px;">
+                <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 15px;">Navigation</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px;"><a href="index.html" style="color: #bbb; text-decoration: none;">Accueil</a></li>
+                    <li style="margin-bottom: 10px;"><a href="habit.html" style="color: #bbb; text-decoration: none;">Boutique e-commerce</a></li>
+                </ul>
+            </div>
+            <div class="footer-box" style="flex: 1; min-width: 250px; margin: 15px;">
+                <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 15px;">Support & Contact</h3>
+                <ul style="list-style: none; padding: 0; margin: 0; color: #bbb; font-size: 0.95rem; line-height: 1.8;">
+                    <li>📞 Service Client Premium</li>
+                    <li>📍 Thiès, Sénégal</li>
+                    <li>💬 Assistance Directe 24h/7j</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright" style="text-align: center; padding: 25px; background: #111; color: #888; font-size: 0.9rem; border-top: 1px solid #222;">
+            &copy; 2026 YEYAH Lumino Concept. Tous droits réservés.
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
