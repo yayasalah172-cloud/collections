@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEYAH | Accueil - Boutique Premium</title>
+    <title>YEYAH | Boutique - Notre Catalogue</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,92 +16,169 @@
             <div class="logo"><a href="index.html">YEYAH<span>.</span></a></div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="habit.html">Boutique</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="habit.html" class="active">Boutique</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- ==========================================================================
-       SECTION EN-TÊTE PREMIUM : NOM -> DESCRIPTION -> TRAIT -> BOUTON VERS HABIT.HTML
+       CATALOGUE DES MAILLOTS (Au milieu)
        ========================================================================== -->
-    <div style="padding-top: 160px; padding-bottom: 80px; background: #fff; width: 100%; text-align: center; display: block; clear: both;">
-        <div style="max-width: 650px; margin: 0 auto; padding: 0 20px; text-align: center;">
-            
-            <!-- 1. Ton Nom tout en haut -->
-            <h1 style="font-size: 2.5rem; color: #111; margin-top: 0; margin-bottom: 15px; font-weight: 800; text-align: center; letter-spacing: -0.5px;">YEYAH Lumino Concept</h1>
-            
-            <!-- 2. La Description juste en dessous -->
-            <p style="color: #444; margin: 0 auto; font-size: 1.05rem; line-height: 1.6; text-align: center; max-width: 550px;">
-                Votre adresse de référence pour les maillots officiels et les vêtements haut de gamme au Sénégal. 
-                Découvrez le meilleur du vêtement sportif avec un confort et un style d'exception.
-            </p>
-            
-            <!-- 3. Le Trait de séparation épuré -->
-            <hr style="width: 80px; border: none; border-top: 2px solid #222; margin: 35px auto; opacity: 0.8;">
-            
-            <!-- 4. Le Bouton jaune et noir qui redirige vers habit.html -->
-            <a href="habit.html" style="background: #FFD700 !important; color: #000000 !important; padding: 15px 40px; text-decoration: none !important; border-radius: 30px; font-weight: 800; font-size: 1.15rem; display: inline-block; border: 2px solid #000000; box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3); text-transform: uppercase; letter-spacing: 0.5px;">
-                Découvrez nos maillots <span style="margin-left: 8px; font-size: 1.2rem; display: inline-block; transform: translateY(1px);">➔</span>
-            </a>
-
-        </div>
-    </div>
-
-    <!-- ==========================================================================
-       SECTION NOS AVANTAGES
-       ========================================================================== -->
-    <section id="avantages" style="padding: 60px 0; background: #f9f9f9; clear: both; display: block;">
+    <section id="catalogue-habits" style="padding-top: 120px; padding-bottom: 60px; clear: both; display: block;">
         <div class="section-title" style="text-align: center; margin-bottom: 40px;">
-            <h2>L'Expérience YEYAH</h2>
-            <p>Pourquoi faire confiance à notre boutique pour vos achats sportifs.</p>
+            <h1 style="font-size: 2rem; margin-bottom: 10px;">Boutique Officielle</h1>
+            <p>Découvrez notre sélection exclusive au prix unique de 15 000 FCFA.</p>
         </div>
 
-        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;">
-            <div style="text-align: center; flex: 1; min-width: 250px; margin: 15px; padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); box-sizing: border-box;">
-                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">⭐</span>
-                <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: #111;">Qualité Certifiée</h3>
-                <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin: 0;">Tissus respirants de qualité supérieure, logos brodés avec soin pour une durabilité maximale.</p>
+        <div class="grille-maillots">
+            <!-- Maillot 1 : Sénégal Blanc -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="senegalblanc.jpg" alt="Sénégal Domicile"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">Sénégal — Domicile</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot Sénégal Blanc" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
             </div>
-            <div style="text-align: center; flex: 1; min-width: 250px; margin: 15px; padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); box-sizing: border-box;">
-                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">🚀</span>
-                <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: #111;">Livraison Express</h3>
-                <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin: 0;">Expédition ultra-rapide à Thiès, Dakar et partout au Sénégal dans les meilleurs délais.</p>
+
+            <!-- Maillot 2 : Sénégal Vert -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="Sénégal .jpg" alt="Sénégal Extérieur"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">Sénégal — Extérieur</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot Sénégal Vert" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
             </div>
-            <div style="text-align: center; flex: 1; min-width: 250px; margin: 15px; padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); box-sizing: border-box;">
-                <span style="font-size: 2.5rem; display: block; margin-bottom: 15px;">🔒</span>
-                <h3 style="font-size: 1.3rem; margin-bottom: 10px; color: #111;">Paiement Sécurisé</h3>
-                <p style="color: #666; font-size: 0.95rem; line-height: 1.5; margin: 0;">Pas de stress : vous passez votre commande en ligne et vous gérez le paiement de manière transparente.</p>
+
+            <!-- Maillot 3 : France -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="France .jpg" alt="France"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">France — Édition 2026</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot France" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
+            </div>
+
+            <!-- Maillot 4 : Argentine -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="argentine .jpg" alt="Argentine"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">Argentine — Édition Céleste</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot Argentine" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
+            </div>
+
+            <!-- Maillot 5 : Brésil -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="Brésil .jpg" alt="Brésil"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">Brésil — Seleção</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot Brésil" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
+            </div>
+
+            <!-- Maillot 6 : Portugal -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="Portugal .jpg" alt="Portugal"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">Portugal — Édition Officielle</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot Portugal" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
+            </div>
+
+            <!-- Maillot 7 : Angleterre -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="Angleterre .jpg" alt="Angleterre"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">Angleterre — Domicile</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot Angleterre" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
+            </div>
+
+            <!-- Maillot 8 : Allemagne -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="Allemagne.jpg" alt="Allemagne"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">Allemagne — Premium</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot Allemagne" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
+            </div>
+
+            <!-- Maillot 9 : Espagne -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="Espagne .jpg" alt="Espagne"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">Espagne — Édition Limitée</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot Espagne" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
+            </div>
+
+            <!-- Maillot 10 : Belgique -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="Belgique .jpg" alt="Belgique"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">Belgique — Look Officiel</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot Belgique" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
+            </div>
+
+            <!-- Maillot 11 : USA -->
+            <div class="maillot-card">
+                <div class="maillot-img-wrapper"><img src="Usa.jpg" alt="USA"></div>
+                <div class="maillot-info">
+                    <h3 class="maillot-titre">États-Unis — Édition Spéciale</h3>
+                    <span class="prix-actuel">15 000 FCFA</span>
+                    <button class="btn-commander" data-nom="Maillot USA" data-prix="15 000 FCFA">💬 Commander</button>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ==========================================================================
-       PIED DE PAGE COMPLET (FOOTER)
+       PIED DE PAGE (Exactement comme dans 1781290291178.jpeg)
        ========================================================================== -->
-    <footer style="background: #1a1a1a; color: #fff; padding: 50px 0 0 0; font-family: sans-serif; margin-top: 40px; clear: both; display: block;">
+    <footer style="background: #1a1a1a; color: #fff; padding: 50px 0 0 0; font-family: sans-serif; clear: both; display: block;">
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 0 20px 40px 20px; box-sizing: border-box;">
+            
+            <!-- Bloc YEYAH -->
             <div style="flex: 1; min-width: 250px; margin: 15px;">
-                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px;">YEYAH<span style="color: #FFD700;">.</span></h3>
+                <h3 style="color: #fff; font-size: 1.4rem; margin-bottom: 15px; font-weight: bold;">YEYAH<span style="color: #FFD700;">.</span></h3>
                 <p style="color: #bbb; font-size: 0.95rem; line-height: 1.6; margin: 0;">Votre adresse de référence pour les maillots et les vêtements haut de gamme. Suivez l'évolution de notre collection.</p>
             </div>
+            
+            <!-- Bloc Navigation -->
             <div style="flex: 1; min-width: 200px; margin: 15px;">
-                <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 15px;">Navigation</h3>
+                <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 15px; font-weight: bold;">Navigation</h3>
                 <ul style="list-style: none; padding: 0; margin: 0;">
                     <li style="margin-bottom: 10px;"><a href="index.html" style="color: #bbb; text-decoration: none;">Accueil</a></li>
                     <li style="margin-bottom: 10px;"><a href="habit.html" style="color: #bbb; text-decoration: none;">Boutique e-commerce</a></li>
                 </ul>
             </div>
+            
+            <!-- Bloc Support & Contact -->
             <div style="flex: 1; min-width: 250px; margin: 15px;">
-                <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 15px;">Support & Contact</h3>
+                <h3 style="color: #fff; font-size: 1.2rem; margin-bottom: 15px; font-weight: bold;">Support & Contact</h3>
                 <ul style="list-style: none; padding: 0; margin: 0; color: #bbb; font-size: 0.95rem; line-height: 1.8;">
                     <li>📞 Service Client Premium</li>
                     <li>📍 Thiès, Sénégal</li>
                     <li>💬 Assistance Directe 24h/7j</li>
                 </ul>
             </div>
+            
         </div>
+        
+        <!-- Copyright -->
         <div class="copyright" style="text-align: center; padding: 25px; background: #111; color: #888; font-size: 0.9rem; border-top: 1px solid #222;">
             &copy; 2026 YEYAH Lumino Concept. Tous droits réservés.
         </div>
@@ -110,3 +187,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
