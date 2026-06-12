@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique YEYAH | Catalogue Complet des Maillots</title>
+    <!-- Connexion au fichier de style global -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================================================
+       BARRE DE NAVIGATION (HEADER)
+       ========================================================================== -->
+    <header>
+        <div class="nav-container">
+            <div class="logo"><a href="index.html">YEYAH<span>.</span></a></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="habit.html">Boutique</a></li>
+                    <li><a href="index.html#avantages">Pourquoi nous ?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================================================
+       SECTION BOUTIQUE & CATALOGUE INTERACTIF
+       ========================================================================== -->
+    <section style="margin-top: 90px;">
+        <div class="section-title">
+            <h2>Notre Collection Complète</h2>
+            <p>Utilisez les filtres ci-dessous pour trouver votre maillot préféré instantanément.</p>
+        </div>
+
+        <!-- Système de filtres par boutons interactifs (Géré par JavaScript) -->
+        <div class="filtres-container">
+            <button class="btn-filtre" data-categorie="all">🌍 Tout afficher</button>
+            <button class="btn-filtre" data-categorie="clubs">⚽ Éditions Clubs</button>
+            <button class="btn-filtre" data-categorie="national">🇸🇳 Équipes Nationales</button>
+        </div>
+
+        <!-- Grille principale contenant tout le catalogue -->
+        <div class="grille-maillots">
+
+            <!-- Produit 1 : Real Madrid -->
+            <div class="maillot-card" data-cat="clubs">
+                <span class="badge-promo">🔥 Populaire</span>
+                <div class="maillot-img-wrapper">
+                    <img src="real.webp" alt="Maillot Real Madrid">
+                </div>
+                <div class="maillot-info">
+                    <span class="maillot-cat">Liga - Espagne</span>
+                    <h3 class="maillot-titre">Maillot Real Madrid (Domicile)</h3>
+                    <div class="maillot-prix-box">
+                        <span class="prix-actuel">15 000 FCFA</span>
+                    </div>
+                    <button class="btn-commander" data-nom="Maillot Real Madrid Domicile" data-prix="15 000 FCFA">
+                        💬 Commander sur WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produit 2 : Chelsea -->
+            <div class="maillot-card" data-cat="club">
+                <div class="maillot-img-wrapper">
+                    <img src="lille.webp" alt="Maillot lille">
+                </div>
+                <div class="maillot-info">
+                    <span class="maillot-cat">Premier League - Angleterre</span>
+                    <h3 class="maillot-titre">Maillot Lille FC (Domicile)</h3>
+                    <div class="maillot-prix-box">
+                        <span class="prix-actuel">15 000 FCFA</span>
+                    </div>
+                    <button class="btn-commander" data-nom="domicile lille" data-prix="15 000 FCFA">
+                        💬 Commander sur WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produit 3 : Sénégal -->
+            <div class="maillot-card" data-cat="national">
+                <span class="badge-promo" style="background: #2ebd59;">🇸🇳 Téranga</span>
+                <div class="maillot-img-wrapper">
+                    <img src="sénégal.webp" alt="Maillot Sénégal">
+                </div>
+                <div class="maillot-info">
+                    <span class="maillot-cat">CAF - Sélection Nationale</span>
+                    <h3 class="maillot-titre">Maillot Officiel du Sénégal</h3>
+                    <div class="maillot-prix-box">
+                        <span class="prix-actuel">15 000 FCFA</span>
+                    </div>
+                    <button class="btn-commander" data-nom="Maillot Officiel Sénégal" data-prix="15 000 FCFA">
+                        💬 Commander sur WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produit 4 : Liverpool -->
+            <div class="maillot-card" data-cat="clubs">
+                <span class="badge-promo">🔴 Nouveau</span>
+                <div class="maillot-img-wrapper">
+                    <img src="liverpool.webp" alt="Maillot Liverpool">
+                </div>
+                <div class="maillot-info">
+                    <span class="maillot-cat">Premier League - Angleterre</span>
+                    <h3 class="maillot-titre">Maillot Mo Salah - Liverpool</h3>
+                    <div class="maillot-prix-box">
+                        <span class="prix-actuel">15 000 FCFA</span>
+                    </div>
+                    <button class="btn-commander" data-nom="Maillot Liverpool Mo Salah" data-prix="15 000 FCFA">
+                        💬 Commander sur WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produit 5 : Chelsea -->
+            <div class="maillot-card" data-cat="Club">
+                <div class="maillot-img-wrapper">
+                    <img src="chelsea.webp" alt="Maillot Chelsea">
+                </div>
+                <div class="maillot-info">
+                    <span class="maillot-cat">premier league-Angleterre</span>
+                    <h3 class="maillot-titre">Maillot Extérieur</h3>
+                    <div class="maillot-prix-box">
+                        <span class="prix-actuel">15 000 FCFA</span>
+                    </div>
+                    <button class="btn-commander" data-nom="Maillot Chelsea" data-prix="15 000 FCFA">
+                        💬 Commander sur WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <!-- Produit 6 : Veste d'entraînement Premium -->
+            <div class="maillot-card" data-cat="clubs">
+                <span class="badge-promo" style="background:#000;">💎 Édition Limitée</span>
+                <div class="maillot-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?q=80&w=600" alt="Survêtement Premium">
+                </div>
+                <div class="maillot-info">
+                    <span class="maillot-cat">Vêtements - Sportswear</span>
+                    <h3 class="maillot-titre">Veste d'Entraînement Pro YEYAH</h3>
+                    <div class="maillot-prix-box">
+                        <span class="prix-actuel">20 000 FCFA</span>
+                        <span class="prix-barre">25 000 FCFA</span>
+                    </div>
+                    <button class="btn-commander" data-nom="Veste Entrainement Pro YEYAH" data-prix="20 000 FCFA">
+                        💬 Commander sur WhatsApp
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER (PIED DE PAGE)
+       ========================================================================== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>YEYAH.</h3>
+                <p>Votre adresse de référence pour les maillots et les vêtements haut de gamme. Suivez l'évolution de notre collection.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="habit.html">Boutique e-commerce</a></li>
+                    <li><a href="index.html#avantages">Nos Garanties</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Support & Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="#">📞 Service Client</a></li>
+                    <li><a href="#">📍 Thiès, Sénégal</a></li>
+                    <li><a href="#">💬 Assistance 24h/7j</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 YEYAH Lumino Concept. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Bouton dynamique pour remonter en haut de page -->
+    <button id="scrollBtn" style="display: none;">⬆</button>
+
+    <!-- Chargement du script logique global -->
+    <script src="script.js"></script>
+</body>
+</html>
