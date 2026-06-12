@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEYAH | Boutique Complète</title>
+    <title>YEYAH | Boutique - Notre Catalogue</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- ==========================================================================
+       EN-TÊTE ET NAVIGATION
+       ========================================================================== -->
     <header>
         <div class="nav-container">
             <div class="logo"><a href="index.html">YEYAH<span>.</span></a></div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="habit.html">Boutique</a></li>
+                    <li><a href="habit.html" class="active">Boutique</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="vedettes" style="padding-top: 100px;">
-        <div class="section-title">
-            <h2>Notre Collection Complète</h2>
-            <p>Tous nos maillots officiels au prix unique de 15 000 FCFA.</p>
+    <!-- ==========================================================================
+       CATALOGUE DES MAILLOTS
+       ========================================================================== -->
+    <section id="catalogue-habits" style="padding-top: 120px; padding-bottom: 60px; clear: both; display: block;">
+        <div class="section-title" style="text-align: center; margin-bottom: 40px;">
+            <h1 style="font-size: 2rem; margin-bottom: 10px;">Boutique Officielle</h1>
+            <p>Découvrez notre sélection exclusive au prix unique de 15 000 FCFA.</p>
         </div>
 
         <div class="grille-maillots">
             <!-- Maillot 1 : Sénégal Blanc -->
             <div class="maillot-card">
-                <div class="maillot-img-wrapper"><img src="senegalblanc.jpg" alt="Sénégal Blanc"></div>
+                <div class="maillot-img-wrapper"><img src="senegalblanc.jpg" alt="Sénégal Domicile"></div>
                 <div class="maillot-info">
                     <h3 class="maillot-titre">Sénégal — Domicile</h3>
                     <span class="prix-actuel">15 000 FCFA</span>
@@ -39,7 +45,7 @@
 
             <!-- Maillot 2 : Sénégal Vert -->
             <div class="maillot-card">
-                <div class="maillot-img-wrapper"><img src="Sénégal .jpg" alt="Sénégal Vert"></div>
+                <div class="maillot-img-wrapper"><img src="Sénégal .jpg" alt="Sénégal Extérieur"></div>
                 <div class="maillot-info">
                     <h3 class="maillot-titre">Sénégal — Extérieur</h3>
                     <span class="prix-actuel">15 000 FCFA</span>
@@ -139,21 +145,25 @@
         </div>
     </section>
 
-    <!-- SECTION AVANTAGES -->
-    <section id="avantages" class="avantages-bg">
-        <div class="section-title">
-            <h2>L'Expérience YEYAH</h2>
+    <!-- ==========================================================================
+       BLOC CONTACT & SUPPORT DEVENU LE FOOTER DE LA DEUXIÈME PAGE
+       ========================================================================== -->
+    <footer style="background: #111111; color: #ffffff; padding: 40px 20px 20px 20px; text-align: center; font-family: sans-serif; clear: both; display: block;">
+        <div style="max-width: 600px; margin: 0 auto 30px auto;">
+            <h4 style="font-size: 1.2rem; color: #FFD700; margin-bottom: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Contact & Support</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 1rem; line-height: 2;">
+                <li style="color: #bbb; margin-bottom: 5px;">📞 Service Client Premium</li>
+                <li style="color: #bbb; margin-bottom: 5px;">📍 Thiès, Sénégal</li>
+                <li style="color: #bbb; margin-bottom: 5px;">💬 Assistance Directe 24h/7j</li>
+            </ul>
         </div>
-        <div class="grille-avantages">
-            <div class="avantage-box"><h3>⭐ Qualité</h3></div>
-            <div class="avantage-box"><h3>🚀 Livraison</h3></div>
-            <div class="avantage-box"><h3>🔒 Sécurité</h3></div>
+        
+        <div style="text-align: center; color: #666; font-size: 0.85rem; border-top: 1px solid #222; padding-top: 20px;">
+            &copy; 2026 YEYAH Lumino Concept. Tous droits réservés.
         </div>
-    </section>
-
-    <footer>
-        <div class="copyright">&copy; 2026 YEYAH Lumino Concept.</div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
+
